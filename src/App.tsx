@@ -26,10 +26,10 @@ const App: React.FC = () => {
         <Route path="/differentiation" element={<Differentiation />} />
         <Route path="/contact" element={<Contact />} />
         
-        {/* ✅ admin login route */}
+       
         <Route path="/login" element={<AdminLogin />} />
         
-        {/* ✅ protected admin dashboard */}
+      
         <Route
           path="/admin"
           element={
@@ -40,7 +40,7 @@ const App: React.FC = () => {
         />
       </Routes>
 
-      {/* Hide footer on admin & login pages */}
+
       {location.pathname !== "/admin" && location.pathname !== "/login" && <Footer />}
       <ToastContainer position="top-right" autoClose={1000} />
     </>

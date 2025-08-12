@@ -11,11 +11,7 @@ import frame6 from "../../public/process/Frame 396.png";
 import Navbar from '../components/common/Navbar';
 
 
-// const Process = () => {
-//   return (
-//     <div>Process</div>
-//   )
-// }
+
 type Step = {
   number: string;
   titleKo: string;

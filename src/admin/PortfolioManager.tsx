@@ -34,7 +34,7 @@ export default function PortfolioManagement() {
   const [editingId, setEditingId] = useState<string | null>(null);
   const [showModal, setShowModal] = useState(false);
 
-  const API_BASE = "https://videocrew-api.onrender.com/api/portfolio";
+  const API_BASE = "https://viedocrew-backend.onrender.com/api/portfolio";
   const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
 
   const authFetch = (url: string, options: RequestInit = {}) => {

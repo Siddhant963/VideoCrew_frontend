@@ -43,8 +43,8 @@ export default function FileUpload() {
 
  const endpoint =
   type === "image"
-    ? "https://videocrew-api.onrender.com/api/upload/image"
-    : "https://videocrew-api.onrender.com/api/upload/video";
+    ? "https://viedocrew-backend.onrender.com/api/upload/image"
+    : "https://viedocrew-backend.onrender.com/api/upload/video";
 
 
     for (let i = 0; i < files.length; i++) {

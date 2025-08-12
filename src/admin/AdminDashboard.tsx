@@ -40,17 +40,17 @@ export default function Dashboard (){
 
   return (
     <div className="min-h-screen bg-black flex relative overflow-hidden">
-      {/* Animated background */}
+    
       <div className="absolute inset-0 z-0">
-        {/* Animated grid */}
+      
         <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.02)_1px,transparent_1px)] bg-[size:60px_60px] animate-pulse" />
 
-        {/* Floating orbs */}
+        
         <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-float" />
         <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl animate-float-delayed" />
         <div className="absolute top-2/3 left-1/2 w-48 h-48 bg-cyan-500/5 rounded-full blur-3xl animate-float-slow" />
 
-        {/* Animated particles */}
+        
         {[...Array(15)].map((_, i) => (
           <div
             key={i}
@@ -65,7 +65,7 @@ export default function Dashboard (){
         ))}
       </div>
 
-      {/* Sidebar */}
+     
       <div
         className={`fixed inset-y-0 left-0 z-50 w-64 bg-gray-800/95 backdrop-blur-xl border-r border-gray-700/50 shadow-2xl transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0 ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
@@ -117,9 +117,9 @@ export default function Dashboard (){
         </div>
       </div>
 
-      {/* Main Content */}
+   
       <div className="flex-1 flex flex-col lg:ml-0 relative z-10">
-        {/* Header */}
+       
         <header className="bg-gray-800/80 backdrop-blur-xl shadow-lg border-b border-gray-700/50 h-16 flex items-center justify-between px-6">
           <button
             onClick={() => setSidebarOpen(true)}
@@ -139,7 +139,7 @@ export default function Dashboard (){
         <main className="flex-1 p-6 overflow-auto">{renderContent()}</main>
       </div>
 
-      {/* Sidebar Overlay */}
+ 
       {sidebarOpen && (
         <div
           className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 lg:hidden animate-fade-in"

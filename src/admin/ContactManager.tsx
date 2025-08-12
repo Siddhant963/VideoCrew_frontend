@@ -26,7 +26,7 @@ export default function ContactManagement() {
       try {
         setLoading(true)
         setError(null)
-        const res = await fetch("https://videocrew-api.onrender.com/api/contact")
+        const res = await fetch("https://viedocrew-backend.onrender.com/api/contact")
         if (!res.ok) throw new Error("Failed to fetch contacts")
         const data = await res.json()
         setContacts(data)
@@ -55,7 +55,7 @@ export default function ContactManagement() {
 
   const updateStatus = async (id: string, newStatus: "new" | "pending" | "completed") => {
     try {
-      const res = await fetch(`https://videocrew-api.onrender.com/api/contact/${id}`, {
+      const res = await fetch(`https://viedocrew-backend.onrender.com/api/contact/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ status: newStatus }),
